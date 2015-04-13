@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond $1 !^(index\.php|images|table-images|js|robots\.txt|css)
+RewriteRule ^notify.php notify.php [L,QSA]
+RewriteRule ^android.php android.php [L,QSA]
+RewriteRule ^(.+)$ index.php?method=$1 [L,QSA]
